@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---- Variables ----*/
+:root {
+    --header-height: 4.5rem;
+
+    /* Color */
+    --hue: 159;
+
+    /* HSL Color Mode */
+    --base-color: hsl(var(--hue) 36% 57%);
+    --title-color: hsl(var(--hue) 41% 10%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 98%);
+    
+    /* Fonts */
+    --title-font-size: 1.875rem;
+
+    --title-font: 'Poppins', sans-serif;
+}
+
+
+/* === Base ==== */
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    color: var(--text-color);
+}
+
+.title {
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+
+.divider-1 {
+    height: 2px;
+    background: linear-gradient(
+      270deg,
+      hsla(var(--hue), 36%, 57%, 1),
+      hsla(var(--hue), 65%, 88%, 0.34));
+}
+
+.divider-2 {
+    height: 2px;
+    background: linear-gradient(
+      270deg,
+      hsla(var(--hue), 65%, 88%, 0.34),
+      hsla(var(--hue), 36%, 57%, 1)
+    );
+  }
+
+
+/* ==== Layout ==== */
+.container {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+/*==== Logo ====*/
+.logo {
+    font: 700 1.31rem var(--title-font);
+    color: var(--title-color);
+}
+
+.logo span {
+    color: var(--base-color);
+}
+
+.logo-alt span {
+    color: var(--body-color);
+}
+
+.container a p {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+
+/*==== img ====*/
+img {
+    width: 100%;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+.image {
+    text-align: center;
+}
+
+.image img {
+    max-width: 20.5rem;
+    max-height: 20.5rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+
+/*==== Navegation ====*/
+nav {
+    height: var(--header-height);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    display: flex;
+}
+
+.text{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;   
+}
+
+h1 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+p {
+    margin: 0 0 1.41575em;
+}
+
+ul li {
+    margin: 0 0 1.41575em 3em;
+}
+
+
+/* ==== Footer ==== */
+
+footer {
+    background: var(--base-color);
+}
+
+footer.section {
+    padding: 4rem 0;
+}
+
+footer .logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+    color: var(--text-color-light);
+    margin-bottom: 0.75rem;
+}
+
